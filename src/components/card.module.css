@@ -1,0 +1,44 @@
+.card {
+  width: min(100%, 20rem);
+  overflow: hidden;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.24s ease,
+    box-shadow 0.24s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+}
+
+.imageWrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.body {
+  padding: 1.2rem;
+}
+
+.title {
+  color: #2563eb;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.description {
+  margin-top: 0.6rem;
+  color: #1f2937;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
